@@ -26,5 +26,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install mock pytest pytest_socket
+      - name: Install Windows dependencies
+        if: runner.os == 'Windows'
+        run: pip install pypiwin32
       - name: Run unit tests
         run: python -m pytest tests/unit/ -x
