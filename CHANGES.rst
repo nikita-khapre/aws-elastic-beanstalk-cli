@@ -870,3 +870,4 @@ Changelog
 - Default database username changed from admin to ebroot
 - Trim application version description if it is too long
 - Application version no longer includes git hash
+TESTING
